@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dark UI - Bank dashboard concept</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./home.css">
+<link rel="stylesheet" href="./popup.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app">
+	<header class="app-header">
+		<div class="app-header-logo">
+			<div class="logo">
+				<span class="logo-icon">
+					<img src="https://assets.codepen.io/285131/almeria-logo.svg" />
+				</span>
+				<h1 class="logo-title">
+					<span>SD Sanjaya Tirta</span>
+					<span>Panel Admin</span>
+				</h1>
+			</div>
+		</div>
+		<div class="app-header-navigation">
+			<div class="tabs">
+				<a href="#" class="active">
+					Profile Sekolah
+				</a>
+				<a href="#" >
+					Artikel
+				</a>
+			
+			</div>
+		</div>
+		<div class="app-header-actions">
+			<button class="user-profile">
+				<span>Si Admin</span>
+				<span>
+					<img src="https://i.pinimg.com/736x/d3/1d/60/d31d6007a40278322614cbe017b5c717.jpg" />
+				</span>
+			</button>
+			
+		</div>
+		<div class="app-header-mobile">
+			<button onclick="toggleBar()" class="icon-button large">
+				<i class="ph-list"></i>
+			</button>
+		</div>
+
+	</header>
+
+	<div class="leftbar" id="leftbar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closebar()">&times;</a>
+		<a href="index.html"><i class="ph ph-table"></i>Dashboard</a>
+		<a href="home.html"><i class="ph ph-house-simple"></i>Home</a>
+		<a href="artikel.html"><i class="ph ph-article"></i>Artikel</a>
+		<a href="guru.html"><i class="ph ph-chalkboard-teacher"></i>Guru</a>
+		<a href="produk.html"><i class="ph ph-storefront"></i>Produk</a>
+		<a href="kontak.html"><i class="ph ph-chat-teardrop-dots"></i></i>Contact</a>
+	</div>
+
+	
+	<div class="app-body">
+		<div class="app-body-navigation">
+			<nav class="navigation">
+				<a href="index.html">
+					<i class="ph ph-table"></i>
+					<span>Dashboard</span>
+				</a>
+				<a href="home.html">
+					<i class="ph ph-house-simple"></i>
+					<span>Home</span>
+				</a>
+				<a href="artikel.html">
+					<i class="ph ph-article"></i>
+					<span>Artikel</span>
+				</a>
+				<a href="guru.html">
+					<i class="ph ph-chalkboard-teacher"></i>
+					<span>Guru</span>
+				</a>
+				<a href="produk.html">
+					<i class="ph ph-storefront"></i>
+					<span>Produk</span>
+				</a>
+				<a href="kontak.html">
+					<i class="ph ph-chat-teardrop-dots"></i>
+					<span>Contact</span>
+				</a>
+			
+			</nav>
+			<footer class="footer">
+				<h1>Panel Admin<small>©</small></h1>
+				<div>
+					Admin ©<br />
+					All Rights Reserved 2024
+				</div>
+			</footer>
+		</div>
+		<div class="app-body-main-content">
+			<section class="service-section">
+				<h2>Home</h2>
+				<div class="mobile-only">
+					<button class="flat-button">
+						Profile Sekolah
+					</button>
+				</div>
+
+                <div class="mobile-only">
+					<button onclick="window.location.href='artikel.html';" class="flat-button">
+						Artikel
+					</button>
+				</div>
+
+                <div class="subsection1">
+
+                <div class="imgtop">
+                    <img src="senam.jpg" alt="Gambar Contoh">
+                </div>
+
+                <div class="imgtop descriptionhome">
+                    <h1 class="titlehome">SD Sanjaya Tirta</h1>
+                    <p class="deskripsihome">Menanamkan nilai-nilai moral dan etika yang membentuk kdadadadadarakter siswa yang baik dan bertanggung jawab.</p>
+                 
+					<button onclick="edithome1()" class="save-button-desktop homemobile">
+						Edit
+					</button>
+                      
+               
+                </div>
+           
+
+                </div>
+
+             
+				<button onclick="edithome1()" class="save-button-desktop homedesktop">
+					Edit
+				</button>
+              
+
+
+				
+			</section>
+
+
+
+			<section class="service-section">
+	
+			
+
+                <div class="subsection1">
+
+                <div class="imgtop">
+                    <img src="Gambar-Gedung-Sekolah-Modern-18.jpg" alt="Gambar Contoh">
+                </div>
+
+                <div class="imgtop descriptionhome">
+                    <h1 class="titlehome">SD Sanjaya Tirta</h1>
+                    <p class="deskripsihome">Sekolah Dasar Negeri Sanjaya Tirta adalah lembaga pendidikan yang terletak di pusat kota dengan visi untuk mencetak generasi muda yang cerdas, berbudi pekerti luhur, dan memiliki wawasan global. Sekolah ini didirikan dengan tujuan memberikan pendidikan yang berkualitas kepada anak-anak sejak usia dini, serta menanamkan nilai-nilai moral dan etika yang tinggi. Melalui kurikulum yang berorientasi pada pengembangan potensi individu, SD Sanjaya Tirta berkomitmen untuk menciptakan lingkungan belajar yang inklusif, kreatif, dan inovatif bagi seluruh siswa.</p>
+                 
+                    <button onclick="edithome2()" class="save-button-desktop homemobile">
+						Edit
+					</button>
+                      
+               
+                </div>
+           
+
+                </div>
+
+              
+
+				<button onclick="edithome2()" class="save-button-desktop homedesktop">
+					Edit
+				</button>
+
+
+				
+			</section>
+
+
+
+
+            <section class="service-section">
+	
+
+                <div class="subsection1">
+
+                <div class="imgtop">
+                    <img src="guru.jpg" alt="Gambar Contoh">
+                </div>
+
+                <div class="imgtop descriptionhome">
+                    <h1 class="titlehome">Kepala Sekolah</h1>
+                    <p class="deskripsihome">Selamat datang di website resmi Sekolah Dasar Negeri Sanjaya Tirta. Kami sangat bangga dapat memperkenalkan sekolah kami kepada seluruh masyarakat melalui platform ini. SD Sanjaya Tirta berkomitmen untuk menjadi lembaga pendidikan yang memberikan layanan terbaik kepada siswa, dengan fokus pada pengembangan intelektual dan karakter yang unggul.
+
+						Sebagai kepala sekolah, saya Safa no Americano bersama seluruh tenaga pendidik dan staf sekolah selalu berupaya untuk menciptakan lingkungan belajar yang aman, nyaman, dan mendukung kreativitas siswa. Kami berkeyakinan bahwa setiap anak memiliki potensi yang luar biasa dan melalui pendidikan yang berkualitas, mereka akan tumbuh menjadi individu yang siap menghadapi tantangan masa depan.
+						
+						</p>
+                 
+						<button onclick="edithome3()" class="save-button-desktop homemobile">
+							Edit
+						</button>
+		
+                      
+               
+                </div>
+           
+
+                </div>
+
+				<button onclick="edithome3()" class="save-button-desktop homedesktop">
+					Edit
+				</button>
+              
+
+
+				
+			</section>
+
+
+            
+			
+		</div>
+		<div class="app-body-sidebar">
+			<section class="payment-section">
+				<h2>Tentang Kami</h2>
+			
+				<div class="payments">
+					<div class="payment">
+						<div class="card green">
+							<i class="ph ph-chalkboard-teacher"></i>
+							<span>
+								Guru
+							</span>
+						</div>
+						<div class="payment-details">
+							<h3>Guru</h3>
+							<div>
+								<span>Lihat profil lengkap guru-guru SD Sanjaya Tirta. Temukan pengalaman, keahlian, dan dedikasi mereka dalam mendidik</span>
+								<button class="icon-button">
+									<i class="ph-caret-right-bold"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="payment">
+						<div class="card olive">
+							<i class="ph ph-shopping-bag"></i>
+							<span>
+								Produk
+							</span>
+						</div>
+						<div class="payment-details">
+							<h3>Produk</h3>
+							<div>
+								<span>Setiap produk kami dirancang untuk memenuhi kebutuhan pendidikan yang berkualitas.</span>
+								<button class="icon-button">
+									<i class="ph-caret-right-bold"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="payment">
+						<div class="card gray">
+							<i class="ph ph-headset"></i>
+							<span>
+								Dukungan
+							</span>
+						</div>
+						<div class="payment-details">
+							<h3>Dukungan</h3>
+							<div>
+								<span>Dengan memberikan dukungan, Anda turut berperan dalam membentuk masa depan anak-anak melalui pendidikan yang berkualitas di SD Sanjaya Tirta.</span>
+								<button class="icon-button">
+									<i class="ph-caret-right-bold"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="payment">
+						<div class="card gray">
+							<i class="ph ph-chat-dots"></i>
+							<span>
+								Kontak Kami
+							</span>
+						</div>
+						<div class="payment-details">
+							<h3>Kontak Kami</h3>
+							<div>
+								<span>Informasi lebih lanjut dan jangan ragu untuk menghubungi kami. Kami siap membantu Anda!</span>
+								<button class="icon-button">
+									<i class="ph-caret-right-bold"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="faq">
+					<p>Most frequently asked questions</p>
+					<div>
+						<label>Question</label>
+						<input type="text" placeholder="Type here">
+					</div>
+				</div>
+				<div class="payment-section-footer">
+					<button class="save-button">
+						Save
+					</button>
+					<button class="settings-button">
+						<i class="ph-gear"></i>
+						<span>More settings</span>
+					</button>
+				</div>
+			</section>
+		</div>
+
+
+
+
+
+
+
+
+
+	</div>
+
+	<div style="display: none;" class="popup homeedit1">
+		<div class="popup-overlay"></div>
+		<div class="popup-content">
+		  <h2>Edit Home</h2>
+		  <div class="grid">
+	  
+			<form action="https://httpbin.org/post" method="POST" class="form login">
+				<div class="image-edit">
+					<img src="senam.jpg" alt="Gambar Contoh">
+				  </div>
+
+				  <div id="upload-icon" class="custom-file-upload">
+					<i class="fa-solid fa-upload"></i>
+					<span>upload files</span>
+				  </div>
+				  
+				  <input id="hidden-file-upload" type="file" accept="image/*" style="display: none;">
+		
+			  <div class="form__field">
+				<label for="login__username">
+					<i class="fa-solid fa-school"></i>
+				  <span class="hidden">Nama Sekolah</span></label>
+				<input autocomplete="nama" id="login__username" type="text" name="namapenyewa" class="form__input" placeholder="Nama Sekolah" required>
+			  </div>
+	  
+			
+		
+			  <div class="form__field">
+				<label for="login__password">
+					<i class="fa-regular fa-rectangle-list"></i>
+				  <span class="hidden">Deskripsi</span></label>
+				  <textarea id="login__password" name="deskripsihome" class="form__input textareahome" placeholder="Deskripsi" required></textarea>
+
+			  </div>
+	  
+		
+			  <div class="form__field">
+				<input type="submit" value="Simpan">
+			  </div>
+		
+			</form>
+		
+		
+		
+		  </div>
+		
+	  
+		  
+		<i class="popup-close fa-solid fa-xmark"></i>
+		   
+		</div>
+	  </div>
+
+
+
+
+	  <div style="display: none;" class="popup homeedit2">
+		<div class="popup-overlay"></div>
+		<div class="popup-content">
+		  <h2>Edit Home</h2>
+		  <div class="grid">
+	  
+			<form action="https://httpbin.org/post" method="POST" class="form login">
+				<div class="image-edit">
+					<img src="Gambar-Gedung-Sekolah-Modern-18.jpg" alt="Gambar Contoh">
+				  </div>
+
+				  <div id="upload-icon" class="custom-file-upload">
+					<i class="fa-solid fa-upload"></i>
+					<span>upload files</span>
+				  </div>
+				  
+				  <input id="hidden-file-upload" type="file" accept="image/*" style="display: none;">
+		
+			  <div class="form__field">
+				<label for="login__username">
+					<i class="fa-solid fa-school"></i>
+				  <span class="hidden">Nama Sekolah</span></label>
+				<input autocomplete="nama" id="login__username" type="text" name="namapenyewa" class="form__input" placeholder="Nama Sekolah" required>
+			  </div>
+	  
+			
+		
+			  <div class="form__field">
+				<label for="login__password">
+					<i class="fa-regular fa-rectangle-list"></i>
+				  <span class="hidden">Deskripsi</span></label>
+				  <textarea id="login__password" name="deskripsihome" class="form__input textareahome" placeholder="Deskripsi" required></textarea>
+
+			  </div>
+	  
+		
+			  <div class="form__field">
+				<input type="submit" value="Simpan">
+			  </div>
+		
+			</form>
+		
+		
+		
+		  </div>
+		
+	  
+		  
+		<i class="popup-close fa-solid fa-xmark"></i>
+		   
+		</div>
+	  </div>
+
+
+
+	  <div style="display: none;" class="popup homeedit3">
+		<div class="popup-overlay"></div>
+		<div class="popup-content">
+		  <h2>Edit Home</h2>
+		  <div class="grid">
+	  
+			<form action="https://httpbin.org/post" method="POST" class="form login">
+				<div class="image-edit">
+					<img src="guru.jpg" alt="Gambar Contoh">
+				  </div>
+
+				  <div id="upload-icon" class="custom-file-upload">
+					<i class="fa-solid fa-upload"></i>
+					<span>upload files</span>
+				  </div>
+				  
+				  <input id="hidden-file-upload" type="file" accept="image/*" style="display: none;">
+		
+			  <div class="form__field">
+				<label for="login__username">
+					<i class="fa-solid fa-school"></i>
+				  <span class="hidden">Nama Sekolah</span></label>
+				<input autocomplete="nama" id="login__username" type="text" name="namapenyewa" class="form__input" placeholder="Nama Sekolah" required>
+			  </div>
+	  
+			
+		
+			  <div class="form__field">
+				<label for="login__password">
+					<i class="fa-regular fa-rectangle-list"></i>
+				  <span class="hidden">Deskripsi</span></label>
+				  <textarea id="login__password" name="deskripsihome" class="form__input textareahome" placeholder="Deskripsi" required></textarea>
+
+			  </div>
+	  
+		
+			  <div class="form__field">
+				<input type="submit" value="Simpan">
+			  </div>
+		
+			</form>
+		
+		
+		
+		  </div>
+		
+	  
+		  
+		<i class="popup-close fa-solid fa-xmark"></i>
+		   
+		</div>
+	  </div>
+
+
+
+
+
+	
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/phosphor-icons'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script  src="./script.js"></script>
+
+
+  <script>
+	 document.getElementById('upload-icon').addEventListener('click', function() {
+    document.getElementById('hidden-file-upload').click();
+  });
+
+  // Tambahkan event listener jika ingin menangani file yang diunggah
+  document.getElementById('hidden-file-upload').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+      alert('File yang diunggah: ' + file.name);
+      // Tambahkan logika lainnya untuk menangani file yang dipilih
+    }
+  });
+  </script>
+
+</body>
+</html>

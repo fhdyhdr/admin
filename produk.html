@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dark UI - Bank dashboard concept</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./home.css">
+<link rel="stylesheet" href="./popup.css">
+<link rel="stylesheet" href="./artikel.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app">
+	<header class="app-header">
+		<div class="app-header-logo">
+			<div class="logo">
+				<span class="logo-icon">
+					<img src="https://assets.codepen.io/285131/almeria-logo.svg" />
+				</span>
+				<h1 class="logo-title">
+					<span>SD Sanjaya Tirta</span>
+					<span>Panel Admin</span>
+				</h1>
+			</div>
+		</div>
+		<div class="app-header-navigation">
+			<div class="tabs">
+				
+			
+			</div>
+		</div>
+		<div class="app-header-actions">
+			<button class="user-profile">
+				<span>Si Admin</span>
+				<span>
+					<img src="https://i.pinimg.com/736x/d3/1d/60/d31d6007a40278322614cbe017b5c717.jpg" />
+				</span>
+			</button>
+			
+		</div>
+		<div class="app-header-mobile">
+			<button onclick="toggleBar()" class="icon-button large">
+				<i class="ph-list"></i>
+			</button>
+		</div>
+
+	</header>
+
+	 <!-- Left Sidebar -->
+	 <div class="leftbar" id="leftbar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closebar()">&times;</a>
+		<a href="index.html"><i class="ph ph-table"></i>Dashboard</a>
+		<a href="home.html"><i class="ph ph-house-simple"></i>Home</a>
+		<a href="artikel.html"><i class="ph ph-article"></i>Artikel</a>
+		<a href="guru.html"><i class="ph ph-chalkboard-teacher"></i>Guru</a>
+		<a href="produk.html"><i class="ph ph-storefront"></i>Produk</a>
+		<a href="kontak.html"><i class="ph ph-chat-teardrop-dots"></i></i>Contact</a>
+	</div>
+
+	
+	<div class="app-body-artikel">
+		<div class="app-body-navigation">
+			<nav class="navigation">
+				<a href="index.html">
+					<i class="ph ph-table"></i>
+					<span>Dashboard</span>
+				</a>
+				<a href="home.html">
+					<i class="ph ph-house-simple"></i>
+					<span>Home</span>
+				</a>
+				<a href="artikel.html">
+					<i class="ph ph-article"></i>
+					<span>Artikel</span>
+				</a>
+				<a href="produk.html">
+					<i class="ph ph-chalkboard-teacher"></i>
+					<span>produk</span>
+				</a>
+				<a href="produk.html">
+					<i class="ph ph-storefront"></i>
+					<span>Produk</span>
+				</a>
+				<a href="kontak.html">
+					<i class="ph ph-chat-teardrop-dots"></i>
+					<span>Contact</span>
+				</a>
+			
+			</nav>
+			<footer class="footer">
+				<h1>Panel Admin<small>©</small></h1>
+				<div>
+					Admin ©<br />
+					All Rights Reserved 2024
+				</div>
+			</footer>
+		</div>
+
+		<div style="margin: 0;"></div>
+		
+		<div class="app-body-sidebar">
+			<section class="payment-section">
+				<h2>Produk</h2>
+				<div class="tambah_artikel">
+					<button onclick="tambah_artikel()" class="save-button-desktop">
+					  Tambah Produk
+					</button>
+				  </div>
+				  
+				
+				<div class="payments">
+					
+					<div class="payment-card">
+						<div class="artikelimg">
+							<img src="produk/produk1.jpg" alt="">
+						</div>
+						<div class="payment-details-artikel">
+							<h3 class="judulartikel">Tupperware</h3>
+                            <div class="jabatan_produk">
+								<span>Rp. 50.000</span>
+								
+								
+							</div>
+							
+                            
+							<span class="button_artikel">
+								<button onclick="edit_artikel()" class="save-button-desktop">
+									Edit
+								</button>
+								<button onclick="hapus_artikel()" class="save-button-desktop">
+									Hapus
+								</button>
+								
+
+								
+							</span>
+							
+						</div>
+
+						
+
+						
+					</div>
+		
+					
+                    <div class="payment-card">
+						<div class="artikelimg">
+							<img src="produk/produk2.jpg" alt="">
+						</div>
+						<div class="payment-details-artikel">
+							<h3 class="judulartikel">Buku</h3>
+                            <div class="jabatan_produk">
+								<span>Rp. 50.000</span>
+								
+								
+							</div>
+							
+                            
+							<span class="button_artikel">
+								<button onclick="edit_artikel()" class="save-button-desktop">
+									Edit
+								</button>
+								<button onclick="hapus_artikel()" class="save-button-desktop">
+									Hapus
+								</button>
+								
+
+								
+							</span>
+							
+						</div>
+
+						
+
+						
+					</div>
+                    <div class="payment-card">
+						<div class="artikelimg">
+							<img src="produk/produk3.jpg" alt="">
+						</div>
+						<div class="payment-details-artikel">
+							<h3 class="judulartikel">Tas</h3>
+                            <div class="jabatan_produk">
+								<span>Rp. 50.000</span>
+								
+								
+							</div>
+							
+                            
+							<span class="button_artikel">
+								<button onclick="edit_artikel()" class="save-button-desktop">
+									Edit
+								</button>
+								<button onclick="hapus_artikel()" class="save-button-desktop">
+									Hapus
+								</button>
+								
+
+								
+							</span>
+							
+						</div>
+
+						
+
+						
+					</div>
+                    <div class="payment-card">
+						<div class="artikelimg">
+							<img src="produk/produk4.jpg" alt="">
+						</div>
+						<div class="payment-details-artikel">
+							<h3 class="judulartikel">Penggaris</h3>
+                            <div class="jabatan_produk">
+								<span>Rp. 50.000</span>
+								
+								
+							</div>
+							
+                            
+							<span class="button_artikel">
+								<button onclick="edit_artikel()" class="save-button-desktop">
+									Edit
+								</button>
+								<button onclick="hapus_artikel()" class="save-button-desktop">
+									Hapus
+								</button>
+								
+
+								
+							</span>
+							
+						</div>
+
+						
+
+						
+					</div>
+                    <div class="payment-card">
+						<div class="artikelimg">
+							<img src="produk/produk5.jpg" alt="">
+						</div>
+						<div class="payment-details-artikel">
+							<h3 class="judulartikel">Penghapus</h3>
+                            <div class="jabatan_produk">
+								<span>Rp. 50.000</span>
+								
+								
+							</div>
+							
+                            
+							<span class="button_artikel">
+								<button onclick="edit_artikel()" class="save-button-desktop">
+									Edit
+								</button>
+								<button onclick="hapus_artikel()" class="save-button-desktop">
+									Hapus
+								</button>
+								
+
+								
+							</span>
+							
+						</div>
+
+						
+
+						
+					</div>
+
+					<div class="payment-card">
+						<div class="artikelimg">
+							<img src="produk/produk6.jpg" alt="">
+						</div>
+						<div class="payment-details-artikel">
+							<h3 class="judulartikel">Tas</h3>
+                            <div class="jabatan_produk">
+								<span>Rp. 50.000</span>
+								
+								
+							</div>
+							
+                            
+							<span class="button_artikel">
+								<button onclick="edit_artikel()" class="save-button-desktop">
+									Edit
+								</button>
+								<button onclick="hapus_artikel()" class="save-button-desktop">
+									Hapus
+								</button>
+								
+
+								
+							</span>
+							
+						</div>
+
+						
+
+						
+					</div>
+
+				</div>
+				
+			
+			</section>
+		</div>
+
+
+
+
+
+
+
+
+
+	</div>
+
+	<div style="display: none;" class="popup tambah_artikel">
+		<div class="popup-overlay"></div>
+		<div class="popup-content">
+		  <h2>Tambah produk</h2>
+		  <div class="grid">
+	  
+			<form action="https://httpbin.org/post" method="POST" class="form login">
+				<div class="image-edit">
+					<img src="produk/produk1.jpg" alt="Gambar Contoh">
+				  </div>
+
+				  <div id="upload-icon" class="custom-file-upload">
+					<i class="fa-solid fa-upload"></i>
+					<span>upload files</span>
+				  </div>
+				  
+				  <input id="hidden-file-upload" type="file" accept="image/*" style="display: none;">
+		
+			  <div class="form__field">
+				<label for="login__username">
+					<i class="fa-solid fa-font"></i>
+				  <span class="hidden">Title</span></label>
+				<input autocomplete="nama" id="login__username" type="text" name="namapenyewa" class="form__input" placeholder="Nama produk" required>
+			  </div>
+
+             
+	  
+			
+		
+			  <div class="form__field">
+				<label for="login__username">
+					<i class="fa-solid fa-tag"></i>
+				  <span class="hidden">Harga</span></label>
+				<input autocomplete="nama" id="login__username" type="text" name="namapenyewa" class="form__input" placeholder="Harga produk" required>
+			  </div>
+	  
+		
+			  <div class="form__field">
+				<input type="submit" value="Simpan">
+			  </div>
+		
+			</form>
+		
+		
+		
+		  </div>
+		
+	  
+		  
+		<i class="popup-close fa-solid fa-xmark"></i>
+		   
+		</div>
+	  </div>
+
+
+
+
+	<div style="display: none;" class="popup edit_artikel">
+		<div class="popup-overlay"></div>
+		<div class="popup-content">
+		  <h2>Edit produk</h2>
+		  <div class="grid">
+	  
+			<form action="https://httpbin.org/post" method="POST" class="form login">
+				<div class="image-edit">
+					<img src="produk/produk1.jpg" alt="Gambar Contoh">
+				  </div>
+
+				  <div id="upload-icon" class="custom-file-upload">
+					<i class="fa-solid fa-upload"></i>
+					<span>upload files</span>
+				  </div>
+				  
+				  <input id="hidden-file-upload" type="file" accept="image/*" style="display: none;">
+		
+			  <div class="form__field">
+				<label for="login__username">
+					<i class="fa-solid fa-font"></i>
+				  <span class="hidden">Title</span></label>
+				<input autocomplete="nama" id="login__username" type="text" name="namapenyewa" class="form__input" placeholder="Nama produk" required>
+			  </div>
+	  
+          
+		
+			  <div class="form__field">
+				<label for="login__username">
+					<i class="fa-solid fa-tag"></i>
+				  <span class="hidden">Harga</span></label>
+				<input autocomplete="nama" id="login__username" type="text" name="namapenyewa" class="form__input" placeholder="Harga produk" required>
+			  </div>
+	  
+		
+			  <div class="form__field">
+				<input type="submit" value="Simpan">
+			  </div>
+		
+			</form>
+		
+		
+		
+		  </div>
+		
+	  
+		  
+		<i class="popup-close fa-solid fa-xmark"></i>
+		   
+		</div>
+	  </div>
+
+
+
+
+	  <div style="display: none;" class="popup hapus_artikel">
+		<div class="popup-overlay"></div>
+		<div class="popup-content">
+		  <h2>Hapus produk</h2>
+		  <div class="grid">
+
+		<h3 style="margin-bottom: 20px; color: rgb(198, 75, 75);">Apakah Yakin ingin Menghapus produk : </h3>
+		<p style="color: rgb(185, 185, 185);">Tas Afrika</p>
+		<form action="https://httpbin.org/post" method="POST" class="form login">
+			<div class="form__field buttondelete">
+			  <input onclick="canceldelete()" type="button" value="Batal"> <input type="submit" value="Hapus">
+			</div>
+		  </form>
+		  </div>
+		
+	  
+		  
+		<i class="popup-close fa-solid fa-xmark"></i>
+		   
+		</div>
+	  </div>
+
+
+
+
+
+
+
+
+	
+</div>
+<!-- partial -->
+  <script src='https://unpkg.com/phosphor-icons'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script  src="./script.js"></script>
+
+
+  <script>
+	 document.getElementById('upload-icon').addEventListener('click', function() {
+    document.getElementById('hidden-file-upload').click();
+  });
+
+  // Tambahkan event listener jika ingin menangani file yang diunggah
+  document.getElementById('hidden-file-upload').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+      alert('File yang diunggah: ' + file.name);
+      // Tambahkan logika lainnya untuk menangani file yang dipilih
+    }
+  });
+  </script>
+
+</body>
+</html>

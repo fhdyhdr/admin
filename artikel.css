@@ -1,0 +1,40 @@
+.artikelimg {
+    width: 480px; /* Atur lebar kontainer sesuai kebutuhan */
+    height: 230px; /* Atur tinggi kontainer sesuai kebutuhan */
+    overflow: hidden;
+}
+.artikelimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Membuat gambar tetap proporsional dan memenuhi kontainer */
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .artikelimg {
+        width: 100%; /* Atur lebar kontainer sesuai kebutuhan */
+        height: 200px; /* Atur tinggi kontainer sesuai kebutuhan */
+    
+  }
+  
+}
+
+
+
+.app-body-artikel .payment{
+    margin: 50px 0;
+}
+
+
+.app-body-artikel .buttonkelola {
+    display: flex;   /* Mengatur kontainer menjadi flex */
+    gap: 0.5rem;     /* Mengatur jarak antar tombol */
+  }
+  
+  .jabatan_guru{
+    text-transform: uppercase;
+  }
+
+

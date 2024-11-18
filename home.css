@@ -1,0 +1,129 @@
+.imgtop {
+    width: 450px; /* Atur lebar kontainer sesuai kebutuhan */
+    height: 300px; /* Atur tinggi kontainer sesuai kebutuhan */
+    overflow: hidden;
+  }
+  
+  /* Menyembunyikan scrollbar di Webkit (Chrome, Safari) */
+  .imgtop::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Menyembunyikan scrollbar di Firefox */
+  .imgtop {
+    scrollbar-width: none; /* Atur ukuran scrollbar menjadi nol */
+  }
+  
+  /* Menyembunyikan scrollbar di browser berbasis Internet Explorer dan Edge lama */
+  .imgtop {
+    -ms-overflow-style: none; /* Hilangkan scrollbar */
+  }
+  
+  .imgtop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Membuat gambar tetap proporsional dan memenuhi kontainer */
+  }
+
+
+
+  @media screen and (max-width: 576px) {
+
+    
+    .imgtop{
+     
+        width: 100%; /* Atur lebar kontainer sesuai kebutuhan */
+        height: 250px; /* Atur tinggi kontainer sesuai kebutuhan */
+        margin-top: 50px;
+        
+          
+    }
+    .descriptionhome{
+        margin-top: 0;
+    }
+
+    .titlehome{
+        margin-top: 20px;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+
+
+    .save-button-desktop {
+      border: 1px solid currentColor;
+      color: var(--c-text-tertiary);
+      border-radius: 6px;
+      padding: 0.15em 1em;
+      background-color: transparent;
+      transition: 0.25s ease;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-left: 5px;
+    }
+    .save-button-desktop:focus, .save-button-desktop:hover {
+      color: var(--c-white);
+    }
+
+
+
+
+    .deskripsihome {
+        width: 100%; /* Atur lebar sesuai kebutuhan */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /* Jumlah baris sebelum teks dipotong */
+        overflow: hidden;
+      }
+      
+      .homedesktop{
+        display: none;
+      }
+
+      .homemobile{
+        display: flex;
+      }
+
+
+  
+  }
+
+
+  @media screen and (min-width: 576px) {
+
+    .imgtop{
+        overflow: scroll;
+          
+    }
+
+
+    .subsection1{
+        display: flex;
+    }
+    .deskripsihome{
+        margin-left: 50px;
+        width: 100%;
+        margin-top: 40px;
+    }   
+      
+    .titlehome{
+        margin-left: 50px;
+        font-size: 40px;
+    }
+
+    .service-section{
+        margin-top: 50px;
+    }   
+
+    .homedesktop{
+      display: flex;
+    }
+
+    .homemobile{
+      display: none;
+    }
+
+      
+
+  }
+
